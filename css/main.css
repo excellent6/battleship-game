@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#gameboard {
+    width: 500px;
+    overflow: hidden;
+}
+
+#gameboard div {
+    width: 100px;
+    height: 100px;
+    float: left;
+}

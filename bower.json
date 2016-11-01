@@ -1,0 +1,17 @@
+{
+  "name": "battleship-game",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^5.0.0"
+  }
+}
