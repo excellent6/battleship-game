@@ -6,13 +6,21 @@ html {
     box-sizing: inherit;
 }
 
-#gameboard {
-    width: 500px;
-    overflow: hidden;
+#container {
+    width: 1000px;
+    margin: 0 auto;
 }
 
-#gameboard div {
-    width: 100px;
-    height: 100px;
-    float: left;
+.battleship {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
+.battleship__item {
+    flex-basis: 25%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+}
+
