@@ -89,5 +89,7 @@ body {
 }
 
 .battleship-menu__item {
-    font-size: 20px;
+    font-size: 2em;
+    font-style: italic;
+    padding: 20px;
 }
