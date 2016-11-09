@@ -6,20 +6,62 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: Calibri, Verdana, sans-serif;
+    background-image: url("../images/main-background.jpg");
+    background-size: cover;
+}
+
 #container {
     width: 1000px;
     margin: 0 auto;
 }
 
+.button {
+    font-size: 1.2em;
+    padding: 12px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button--large {
+    width: 300px;
+}
+
+.button--primary {
+    background-color: #1e3900;
+    color: #fff;
+}
+
+.battleship-container {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .battleship {
-    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.battleship--hidden {
+    display: none;
+}
+
+.battleship--visible {
+    display: block;
 }
 
 .battleship__item {
     float: left;
-    width: calc(100% * (1/5));
-    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: calc(100% * (1/5) - 10px);
+    height: 100px;
     border: 1px solid green;
+}
+
+.battleship__item:nth-child(5n) {
+    margin-right: 0;
 }
 
 .battleship__item--danger {
@@ -32,4 +74,20 @@ html {
 
 .battleship__item--success {
     background-color: #7fff00;
+}
+
+.battleship__hits, .battleship__tries {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-style: italic;
+    border: 1px solid #286d14;
+    background-color: #99ed2d;
+}
+
+.battleship-headline {
+    margin-top: 20px;
+}
+
+.battleship-menu__item {
+    font-size: 20px;
 }
